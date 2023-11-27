@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="reset.css">
+</head>
+
+<body>
+  <div class="container">
+    <dialog class="modal">
+      <form id="form">
+        <fieldset class="input-group">
+          <legend>Add new book</legend>
+          <div class="input-group">
+            <label for="title-book">Title<span aria-label="required" style="color: red">*</span></label>
+            <input type="text" id="title-book" required maxlength="20">
+          </div>
+          <div class="input-group">
+            <label for="author-book">Author<span aria-label="required" style="color: red">*</span></label>
+            <input type="text" id="author-book" required maxlength="20">
+          </div>
+          <div class="input-group">
+            <label for="pages-book">Pages<span aria-label="required" style="color: red">*</span></label>
+            <input type="number" id="pages-book" required min="0">
+          </div>
+          <div class="input-group">
+            <label for="read-book">Have you read it?</label>
+            <input type="checkbox" id="read-book">
+          </div>
+        </fieldset>
+        <button class="submit-button" type="submit">Add</button>
+        <button class="close-button" type="button">Close</button>
+      </form>
+    </dialog>
+    <div class="header">
+      <h1 class="title">My Library</h1>
+      <button class="new-book-btn">ADD A NEW BOOK +</button>
+    </div>
+    <div class="main">
+    </div>
+  </div>
+  <script src="functions.js"></script>
+</body>
+
+</html>

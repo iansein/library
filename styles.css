@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+:root {
+  font-size: 1rem;
+  font-family: Roboto;
+}
+
+.container {
+  min-height: 100vh;
+  background-color: #18392b;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-book-btn {
+  flex-basis: 3.125rem;
+  width: 9.375rem;
+  border-radius: 10px;
+  border: none;
+  font-weight: 800;
+}
+
+.title {
+  padding: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #ffff;
+}
+
+.main {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 1.875rem;
+  background-color: #14452f;
+  margin-top: 1.25rem;
+  min-height: 50vh;
+  padding: 1.75rem;
+}
+
+.card {
+  border: #000000 2px solid;
+  flex-basis: 18.75rem;
+  background-color: #eaeaea;
+  border-radius: 10px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  font-size: 2rem;
+}
+
+.remove-btn,
+.read-btn,
+.not-read-btn {
+  font-size: 1.5rem;
+  font-weight: 800;
+  background-color: #7a2121;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  width: 12.5rem;
+}
+
+.read-btn {
+  background-color: rgb(66, 122, 33);
+}
+
+.not-read-btn {
+  background-color: rgb(182, 142, 69);
+}
+
+.modal {
+  border-radius: 10px;
+}
+
+.modal form {
+  padding: 10px;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal legend {
+  margin: 0 auto;
+}
+
+.modal input[type="text"],
+.modal input[type="number"] {
+  height: 30px;
+  width: 100%;
+}
+
+input[type="checkbox"] {
+  height: 25px;
+  width: 25px;
+  margin: 0px;
+  vertical-align: bottom;
+}
+
+.modal label:not(:last-of-type) {
+  background-color: red;
+}
+
+.input-group {
+  margin-top: 20px;
+}
+
+.submit-button,
+.close-button {
+  margin-top: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  width: 100%;
+  border: none;
+  background-color: #0a5c36;
+  color: #ffff;
+  padding: 10px;
+}
+
+.close-button {
+  background-color: #7a2121;
+}
